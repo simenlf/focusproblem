@@ -7,7 +7,32 @@
 	
 	<l:Grid defaultSpan="L12 M12 S12">
 		
-		<Input liveChange="onLiveChange"/>
+		
+		    
+	    <Table id="yearlyPlanTable" >
+		    <columns>
+    			<Column width="5em">
+    				<Text text="1"/>
+    			</Column>
+    			
+    			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right" width="5em"/>
+			
+		</columns>
+		<items>
+			<ColumnListItem >
+				<cells>
+					<ObjectIdentifier id="rowId"	title="row" />
+						
+					<Input liveChange="onLiveChange"/>
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table> 
+		    
+		    
+		    
+		    
 		
 	</l:Grid>
 </mvc:View>

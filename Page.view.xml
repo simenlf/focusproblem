@@ -1,0 +1,41 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:semantic="sap.m.semantic"
+	height="100%"
+	controllerName="no.skye.focusproblem.Page">
+
+	<semantic:DetailPage showFooter="true" title="Business Plan - {/customerName} ({/customerNo}) - {/city}, {/landx} "     >
+		
+		<IconTabBar 
+			id="idIconTabBar"
+			applyContentPadding="false"
+			expanded="true" 
+			expandable="false"
+			visible="true"
+			stretchContentHeight="false">
+			
+			<items>
+				
+				<IconTabFilter id="tabOne" text="Tab one" >
+				    <mvc:XMLView viewName="no.skye.focusproblem.modules.tabOne.tabOne"/>
+				</IconTabFilter>
+
+				<IconTabFilter id="tabTwo" text="Tab two" >
+				    <mvc:XMLView viewName="no.skye.focusproblem.modules.tabTwo.tabTwo"/>
+				</IconTabFilter>
+			
+			</items>
+			
+		</IconTabBar>
+		
+		<semantic:positiveAction>
+			<semantic:PositiveAction press="savePress" text="Save"/>
+		</semantic:positiveAction>
+		
+		
+	</semantic:DetailPage>
+	
+			
+</mvc:View>

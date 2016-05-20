@@ -1,0 +1,13 @@
+<mvc:View 
+	controllerName="no.skye.focusproblem.modules.tabTwo.tabTwo" 
+	displayBlock="true" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout">
+	
+	<l:Grid defaultSpan="L12 M12 S12">
+	    
+	    <Input id="tabTwoInput" />
+		
+	</l:Grid>
+</mvc:View>
